@@ -1,0 +1,17 @@
+/*
+Theme Name:     Error 500
+Theme URI:      http://fontethemes.com/es/error-500/
+Description:    Error 500 theme
+Author:         Jesus Amieiro
+Author URI:     http://fontethemes.com
+License: 	GNU General Public License v2 or later
+License URI: 	http://www.gnu.org/licenses/gpl-2.0.html
+Tags: 		white, one-column, two-columns, right-sidebar, custom-menu, translation-ready
+Template:       quark
+Version:        2.0.0
+*/
+
+/* --------------------------------------------------------------
+	Import the parent CSS theme
+-------------------------------------------------------------- */
+@import url("../quark/style.css");
