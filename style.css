@@ -11,6 +11,13 @@ Template:       quark
 Version:        2.0.0
 */
 
+/*
+	Colors
+	Font #333332
+	a, a:visited #2790ae
+	a:hover #0f6780
+*/
+
 /* --------------------------------------------------------------
 	Import the parent CSS theme
 -------------------------------------------------------------- */
@@ -83,4 +90,20 @@ h2.site-description {
 -------------------------------------------------------------- */
 #bannercontainer {
 	display:none;
+}
+
+/* --------------------------------------------------------------
+	Main menu 
+-------------------------------------------------------------- */
+.main-small-navigation a, .main-navigation a {
+	display: block;
+	text-decoration: none;
+	color: #333332;
+	font-size: 1.3rem;
+	font-style: normal;
+	font-weight: normal;
+}
+
+.main-small-navigation a:hover, .main-navigation a:hover {
+	color:#0f6780 !important;
 }
