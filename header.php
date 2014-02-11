@@ -48,13 +48,15 @@
 				<h1>
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" rel="home">
 						<?php 
-						$headerImg = get_header_image();
+						echo get_bloginfo( 'name' );
+						// $headerImg = get_header_image();
 						if( !empty( $headerImg ) ) { ?>
-							<img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
+							<!--<img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />-->
 						<?php } 
 						else {
-							echo get_bloginfo( 'name' );
+							// echo get_bloginfo( 'name' );
 						} ?>
+						<h2 class="site-description"><?php echo get_bloginfo( 'description' ); ?></h2>
 					</a>
 				</h1>
 			</div> <!-- /.col.grid_5_of_12 -->
