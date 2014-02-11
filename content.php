@@ -22,7 +22,7 @@
 					<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( esc_html__( 'Permalink to %s', 'quark' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_title(); ?></a>
 				</h1>
 			<?php } // is_single() ?>
-			<?php quark_posted_on(); ?>
+			<?php // quark_posted_on(); ?>
 			<?php if ( has_post_thumbnail() && !is_search() ) { ?>
 				<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( esc_html__( 'Permalink to %s', 'quark' ), the_title_attribute( 'echo=0' ) ) ); ?>">
 					<?php the_post_thumbnail( 'post_feature_full_width' ); ?>
@@ -54,6 +54,7 @@
 				// Only show the tags on the Single Post page
 				quark_entry_meta();
 			} ?>
+			<?php quark_posted_on(); ?>
 			<?php edit_post_link( esc_html__( 'Edit', 'quark' ) . ' <i class="fa fa-angle-right"></i>', '<div class="edit-link">', '</div>' ); ?>
 			<?php if ( is_singular() && get_the_author_meta( 'description' ) && is_multi_author() ) {
 				// If a user has filled out their description and this is a multi-author blog, show their bio
