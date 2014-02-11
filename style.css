@@ -107,3 +107,84 @@ h2.site-description {
 .main-small-navigation a:hover, .main-navigation a:hover {
 	color:#0f6780 !important;
 }
+
+/* --------------------------------------------------------------
+	Sidebar. Widget 
+-------------------------------------------------------------- */
+.widget {
+	margin: 0 0 1.5em !important;
+}
+
+.widget-title {
+	color: #333332;
+	font-size: 1rem;
+	border-bottom: 1px #333332 dotted;
+	margin-bottom: 0.625rem;
+	margin-right: 1rem;
+	padding-left: 0.3rem;
+	text-transform: uppercase;
+}
+
+.textwidget img {
+	float:right;
+	padding:1rem 2rem 0 0;
+}
+
+/* --------------------------------------------------------------
+	Sidebar. Search form 
+-------------------------------------------------------------- */
+#searchform {
+	text-align:right; 
+	margin: 10px 10px 0px 0px;
+}
+
+.widget_search label {
+	display:none;
+}
+
+#searchsubmit {
+	display:none;
+}
+
+#searchform input[type="text"] {
+	padding: 0.1rem 0.5rem !important;
+	margin:0;
+	height: 2rem;
+}
+
+/* --------------------------------------------------------------
+	Sidebar. Twitter widget. http://wordpress.org/plugins/really-simple-twitter-feed-widget/
+-------------------------------------------------------------- */
+.widget_reallysimpletwitterwidget  ul {
+	margin: 0 0 0 1.250rem; 
+	padding: 0;
+}
+
+.widget_reallysimpletwitterwidget  ul li {
+	list-style-type: none;
+	margin: 0.188rem 1.250rem 0.625rem 0.625rem; 
+	padding: 0 0 0.5rem 0;
+	border-bottom: 1px #000 dotted;
+	font-size: 0.875rem;
+}
+
+/* --------------------------------------------------------------
+	Sidebar. Subscription form
+-------------------------------------------------------------- */
+.subscription-mail {
+		text-align: center;
+}
+
+.subscription-text {
+	font-family: 'Source Sans Pro', sans-serif;
+	padding: 0.1rem 0.5rem !important;
+	margin:0;
+	height: 2rem;
+}
+
+.subscription-button {
+	font-family: 'Source Sans Pro', sans-serif;
+	padding: 0.1rem 0.5rem !important;
+	height: 2rem;	
+	font-size: 0.875rem;
+}
