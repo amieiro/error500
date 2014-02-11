@@ -188,3 +188,91 @@ h2.site-description {
 	height: 2rem;	
 	font-size: 0.875rem;
 }
+
+/* --------------------------------------------------------------
+	Main page
+-------------------------------------------------------------- */
+
+/* Styles in the entry titles */
+.entry-header h1, .entry-header h1 a, .entry-header h1 a:visited {
+	color: #333332;
+	font-size: 2.5rem;
+	line-height: 2rem;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 1.6rem 0 1rem 0;
+}
+
+.entry-header h1 a:hover{
+	color:#0f6780;
+}
+
+/* Remove the header-meta borders */
+.header-meta {
+	border:0;
+}
+
+/* Remove elements in the header-meta */
+.header-meta .fa-calendar, .header-meta .entry-date, .header-meta .fa-pencil, a.url.fn.n, .header-meta .post-categories {
+	display:none !important;
+}
+
+/* Align the comments to the left */
+.header-meta .comments-link {
+	float:left !important;
+}
+
+/* Insert a border to the images */
+.entry-content img {
+	border: 1px #DDD solid;
+}
+
+/* Change the p style in the entry content */
+.entry-content p {
+	-webkit-font-smoothing: antialiased;
+	color: #333332;
+	letter-spacing: .01rem;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 21px;
+	line-height: 28px;
+	margin: 1rem 0 1rem 0;
+}
+
+/* Change the blockquote style in the entry content */
+.entry-content blockquote p {
+	color: #333332;
+	letter-spacing: .01rem;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 21px;
+	line-height: 28px;
+	margin: 0 1.5rem 0 1.5rem;
+	padding: 0 0 0 1rem;
+	border-left: 3px #DDD solid;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* --------------------------------------------------------------
+	Paginating elements
+-------------------------------------------------------------- */
+
+li a:hover.page-numbers {
+	background-color: #2790ae;
+	color: #fff;
+}
+.nav-previous a, .nav-next a {
+	display:none !important;
+}
+
+/* --------------------------------------------------------------
+	jQuery Archive List Widget.  http://wordpress.org/plugins/jquery-archive-list-widget/
+-------------------------------------------------------------- */
+ul.jaw_widget, .jaw_years ul
+{
+	list-style-type: none;
+}
+
+.jaw_symbol {
+	display:none;
+}
