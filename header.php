@@ -66,7 +66,7 @@
 					<?php echo quark_get_social_media(); ?>
 				</div>
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<h3 class="menu-toggle assistive-text"><?php esc_html_e( 'Menu', 'quark' ); ?></h3>
+					<h3 class="menu-toggle assistive-text"><i class="fa fa-bars"></i><!--<?php esc_html_e( 'Menu', 'quark' ); ?>--></h3>
 					<div class="assistive-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'quark' ); ?>"><?php esc_html_e( 'Skip to content', 'quark' ); ?></a></div>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
 				</nav> <!-- /.site-navigation.main-navigation -->
