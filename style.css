@@ -14,4 +14,50 @@ Version:        2.0.0
 /* --------------------------------------------------------------
 	Import the parent CSS theme
 -------------------------------------------------------------- */
+
 @import url("../quark/style.css");
+
+/* --------------------------------------------------------------
+	Import the external font 
+-------------------------------------------------------------- */
+
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+/* --------------------------------------------------------------
+	Apply the external font
+	Change the font color: #333332
+	Apply the resets in the theme 
+	Change the a and a:visited color: #2790ae with underline
+	Change the a:hover color: #0f6780
+	Remove the background image
+-------------------------------------------------------------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	border: 0;
+	color:#333332;
+	font-family: 'Source Sans Pro', sans-serif;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+a, a:visited {
+	color: #2790ae;
+	text-decoration: underline;
+}
+
+a:hover{
+	color:#0f6780;
+}
+
+body {
+	background-image:none !important;	
+}
