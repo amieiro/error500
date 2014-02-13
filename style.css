@@ -92,6 +92,12 @@ h2.site-description {
 	display:none;
 }
 
+.home #bannercontainer {
+	display:block;
+	overflow:auto;
+	//height:27rem;
+}
+
 /* --------------------------------------------------------------
 	Main menu 
 -------------------------------------------------------------- */
@@ -187,6 +193,14 @@ h2.site-description {
 	padding: 0.1rem 0.5rem !important;
 	height: 2rem;	
 	font-size: 0.875rem;
+}
+
+/* --------------------------------------------------------------
+       Footer
+-------------------------------------------------------------- */
+
+.site-footer p {
+	color: #ccc;
 }
 
 /* --------------------------------------------------------------
@@ -469,4 +483,21 @@ ul.jaw_widget, .jaw_years ul
 		padding: 0;
 		margin: 0;
 	}
+}
+
+/* --------------------------------------------------------------
+        Metaslider plugin
+-------------------------------------------------------------- */
+.metaslider, .flexslider {
+	width:100% !important;
+}
+
+.banner {
+	width:100% !important;
+	padding: 0 !important;
+	max-width: 3500px;
+}
+
+.banner .widget {
+	margin: 0 !important;
 }
