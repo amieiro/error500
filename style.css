@@ -203,6 +203,14 @@ h2.site-description {
 	color: #ccc;
 }
 
+.smallprint p {
+	color: #ccc;
+}
+
+.site-footer .widget_reallysimpletwitterwidget ul li {
+	color: #ccc !important;
+}
+
 /* --------------------------------------------------------------
 	Main page
 -------------------------------------------------------------- */
