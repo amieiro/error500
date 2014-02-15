@@ -92,7 +92,7 @@ h2.site-description {
 	display:none;
 }
 
-.home #bannercontainer {
+.page #bannercontainer {
 	display:block;
 	overflow:auto;
 	//height:27rem;
