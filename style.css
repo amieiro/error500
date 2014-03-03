@@ -250,7 +250,7 @@ h2.site-description {
 }
 
 /* Change the p style in the entry content */
-.entry-content p {
+.entry-content p, .entry-content li {
 	-webkit-font-smoothing: antialiased;
 	color: #333332;
 	letter-spacing: .01rem;
@@ -259,6 +259,10 @@ h2.site-description {
 	font-size: 1.3rem;
 	line-height: 1.75rem;
 	margin: 1rem 0 1rem 0;
+}
+
+.entry-content li {
+	margin: 1rem 0 -1rem 2rem;
 }
 
 /* Change the blockquote style in the entry content */
