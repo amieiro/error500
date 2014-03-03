@@ -244,9 +244,9 @@ h2.site-description {
 	float:left !important;
 }
 
-/* Insert a border to the images */
+/* Removed: Insert a border to the images */
 .entry-content img {
-	border: 1px #DDD solid;
+	border: 0px #DDD solid;
 }
 
 /* Change the p style in the entry content */
