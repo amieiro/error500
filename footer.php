@@ -49,6 +49,7 @@
 
 		<?php if ( of_get_option( 'footer_content', quark_get_credits() ) ) {
 			echo '<div class="row smallprint">';
+			echo __( 'Theme developed by Fonte Themes', 'error500');
 			echo '<p><a href="http://fontethemes.com" alt="Fonte Themes" target="_blank"><img src="' .  get_stylesheet_directory_uri()  . '/images/fonte_themes_developed_by_white_200_55.png" alt="Fonte Themes" /></a></p>';
 			echo apply_filters( 'meta_content', wp_kses_post( of_get_option( 'footer_content', quark_get_credits() ) ) );
 			echo '</div> <!-- /.smallprint -->';
