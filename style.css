@@ -9,7 +9,7 @@ License URI: 	http://www.gnu.org/licenses/gpl-2.0.html
 Tags: black, gray, dark, light, one-column, two-columns, right-sidebar, fluid-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-image-header, featured-images, full-width-template, microformats, post-formats, sticky-post, theme-options, threaded-comments, translation-ready
 Template:       quark
 Text Domain: 	error500
-Version:        2.0.0
+Version:        2.1.0
 */
 
 /*
@@ -237,7 +237,19 @@ h2.site-description {
 
 /* Remove elements in the header-meta */
 .header-meta .fa-calendar, .header-meta .entry-date, .header-meta .fa-pencil, a.url.fn.n, .header-meta .post-categories {
-	display:none !important;
+	// display:none !important;
+}
+
+.header-meta, .header-meta .entry-date {
+	font-size: 1rem;
+	font-style: normal;
+	line-height: 1.5rem;
+	text-decoration: none;
+	padding: 0 0 0 1rem;
+}
+
+.comments-link {
+	padding: 0;
 }
 
 /* Align the comments to the left */
