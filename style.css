@@ -240,12 +240,23 @@ h2.site-description {
 	// display:none !important;
 }
 
-.header-meta, .header-meta .entry-date {
+.header-meta .entry-date, .header-meta .fa-calendar {
 	font-size: 1rem;
 	font-style: normal;
 	line-height: 1.5rem;
 	text-decoration: none;
 	padding: 0 0 0 1rem;
+}
+
+footer.entry-meta {
+    padding: 0 0 0 1rem !important;
+}
+
+.header-meta {
+    padding: 0;
+}
+.post-categories {
+    display:block;
 }
 
 .comments-link {

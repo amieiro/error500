@@ -101,8 +101,8 @@ if ( ! function_exists( 'error500_posted_before' ) ) {
  * @return void
  */
 if ( ! function_exists( 'error500_posted_after' ) ) {
-	function error500_posted_after() {
-		$post_icon = '';
+    function error500_posted_after() {
+        $post_icon = '';
 		switch ( get_post_format() ) {
 			case 'aside':
 				$post_icon = 'fa-file-o';
@@ -152,9 +152,13 @@ if ( ! function_exists( 'error500_posted_after' ) ) {
 			get_the_author()
 		);*/
 
-		// Return the Categories as a list
-		//$categories_list = get_the_category_list( esc_html__( ' ', 'quark' ) );
-
+		// Return the Categories as a list. In the front page return an empty list
+        if ( is_front_page() && is_home() ) {
+            $categories_list = '';
+        } else
+        {
+            $categories_list = '<i class="fa fa-folder"></i> ' . get_the_category_list( esc_html__( ' ', 'quark' ) );
+        }
 		// Translators: 1: Permalink 2: Title 3: No. of Comments
 		$comments = sprintf( '<span class="comments-link"><i class="fa fa-comment"></i> <a href="%1$s" title="%2$s">%3$s</a></span>',
 			esc_url( get_comments_link() ),
@@ -166,7 +170,9 @@ if ( ! function_exists( 'error500_posted_after' ) ) {
 		printf( wp_kses( __( '<div class="header-meta">%1$s%2$s<span class="post-categories">%3$s</span>%4$s</div>', 'quark' ), array( 
 			'div' => array (
 				'class' => array() ),
-			'span' => array(
+			'i' => array (
+				'class' => array() ),
+            'span' => array(
 				'class' => array() ) ) ),
 			$date,
 			$author,
