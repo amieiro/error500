@@ -537,3 +537,21 @@ ul.jaw_widget, .jaw_years ul
 .banner .widget {
 	margin: 0 !important;
 }
+
+.highlight {
+    margin: 1rem 0 1rem 0;
+    padding: 1rem 1rem 1rem 3rem;
+    border-radius: 4px;
+    background-color: #F9F9F9;
+}
+.highlight, .highlight p {
+    font-size:1rem !important;
+    line-height: 1.25rem !important;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+}
+.highlight .output, .highlight .output p {
+    padding-left:1rem;
+    font-family: 'Courier New', monospace;
+    font-weight: normal;
+}
